@@ -22,27 +22,8 @@ jobs:
       max-parallel: 8
       matrix:
         device:
-          # sm8150
-          - mh2lm
-          - betalm
-          - nabu
-          - vayu-huaxing
-          - vayu-tianma
-          - cepheus
-          - hotdog
-          - guacamole
-          - guacamoleb
-          # sdm845
-          - fajita
-          - beryllium-ebbg
-          - beryllium-tianma
-          - polaris
-          - perseus
-          # sm7325
-          - mona
-          - lisa
-          # msm8998
-          - cheeseburger
+          # sm6225
+          - xun
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -72,3 +53,4 @@ jobs:
           name: ${{ matrix.device }}
           # A file, directory or wildcard pattern that describes what to upload
           path: ./*.img
+          
