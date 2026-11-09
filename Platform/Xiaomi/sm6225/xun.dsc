@@ -17,7 +17,7 @@
 !include Platform/Qualcomm/sm6225/sm6225.dsc
 
 [BuildOptions.common]
-  GCC:*_*_AARCH64_CC_FLAGS = -DENABLE_SIMPLE_INIT 
+    GCC:*_*_AARCH64_CC_FLAGS = -DENABLE_SIMPLE_INIT -DENABLE_LINUX_SIMPLE_MASS_STORAGE -DENABLE_LINUX_UTILS 
 
 [PcdsFixedAtBuild.common]
   # Redmi Pad SE panel: 1200x1920 (portrait native), splash region 0x5c000000 size 0xf00000
